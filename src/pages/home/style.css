@@ -1,0 +1,65 @@
+.home-content-countainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  width: 100vw;
+  background-color: #ffff;
+  padding: 24px 122px;
+  box-sizing: border-box;
+}
+
+.logo-navbar {
+  height: 24px;
+  width: auto;
+}
+
+.navbar-user-countainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+  height: 100%;
+}
+.navbar-user-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  background-color: #e4fde1;
+}
+
+.finance-card-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 48px 122px;
+  box-sizing: border-box;
+}
+
+.finance-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 140px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  margin: 0 3px;
+}
