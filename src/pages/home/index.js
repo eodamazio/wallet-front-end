@@ -77,7 +77,6 @@ const onloadFinancesData = async () => {
     return { error };
   }
 };
-
 const onLoadUserInfo = () => {
   const email = localStorage.getItem("WalletApp:userEmail:");
   const name = localStorage.getItem("WalletApp:userName:");
