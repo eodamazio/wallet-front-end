@@ -85,7 +85,6 @@ const onLoadUserInfo = () => {
   const navbarUserAvatar = document.getElementById("navbar-user-avatar");
 
   // add user email
-
   const emailElement = document.createElement("p");
   const emailText = document.createTextNode(email);
   emailElement.appendChild(emailText);
