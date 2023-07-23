@@ -70,12 +70,15 @@ button {
 }
 
 button.small {
-  background-color: #f4f4f9;
+  border-width: 100%;
+  border-color: #5936cd;
+  border-style: solid;
+  background-color: #ffffff;
   color: #010400;
   font-size: 14px;
   border-radius: 8px;
-  width: 90px;
   height: 36px;
+  width: 90px;
 }
 
 input {
@@ -120,7 +123,7 @@ input {
 }
 
 .mt.smaller {
-  width: 6px;
+  margin-top: 6px;
 }
 
 .logo {

@@ -80,7 +80,6 @@ const onloadFinancesData = async () => {
 const onLoadUserInfo = () => {
   const email = localStorage.getItem("WalletApp:userEmail:");
   const name = localStorage.getItem("WalletApp:userName:");
-
   const navbarUserInfo = document.getElementById("navbar-user-countainer");
   const navbarUserAvatar = document.getElementById("navbar-user-avatar");
 
