@@ -30,24 +30,25 @@ const onRegister = async () => {
   const email = document.getElementById("input-email").value;
   const name = document.getElementById("input-name").value;
 
-  if (name.lenght < 3) {
-    alert("Nome deve conter mais de 3 caracters!");
+  if (name.length < 3) {
+    alert("Nome deve conter mais de 3 caracters.");
     return;
   }
 
-  if (email.lenght < 5 || !email.includes("@")) {
+  if (email.length < 5 || !email.includes("@")) {
     alert("Email inválido!");
     return;
   }
 
   const result = await onCallRegister(email, name);
+
   if (result.error) {
-    alert("falha ao validar o e-mail.");
+    alert("Falha ao validar e-mail.");
     return;
   }
-  localStorage.setItem("WalletApp:userEmail:", result.email);
-  localStorage.setItem("WalletApp:userName:", result.name);
-  localStorage.setItem("WalletApp:userId", result.id);
+  localStorage.setItem("@WalletApp:userEmail", result.email);
+  localStorage.setItem("@WalletApp:userName", result.name);
+  localStorage.setItem("@WalletApp:userId", result.id);
   window.open("../home/index.html", "_self");
 };
 

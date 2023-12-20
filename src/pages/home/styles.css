@@ -1,4 +1,4 @@
-.home-content-countainer {
+.home-content-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -8,6 +8,7 @@
   min-height: 100vh;
   background-color: #f4f4f9;
 }
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -15,7 +16,7 @@
   justify-content: space-between;
   height: 72px;
   width: 100vw;
-  background-color: #ffff;
+  background-color: #ffffff;
   padding: 24px 122px;
   box-sizing: border-box;
 }
@@ -25,7 +26,23 @@
   width: auto;
 }
 
-.navbar-user-countainer {
+.navbar-calendar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+}
+
+.input-calendar {
+  width: 156px;
+  height: 42px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar-user-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,6 +50,7 @@
   width: 260px;
   height: 100%;
 }
+
 .navbar-user-avatar {
   display: flex;
   align-items: center;
@@ -48,7 +66,7 @@
   width: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 48px 122px;
   box-sizing: border-box;
 }
@@ -62,7 +80,6 @@
   height: 140px;
   border-radius: 24px;
   background-color: #ffffff;
-  margin: 0 3px;
 }
 
 .table-container {
@@ -146,7 +163,7 @@ td.center {
 }
 
 .modal-content {
-  height: 100vw;
+  height: 100%;
   width: 480px;
   background-color: #f4f4f9;
   padding: 24px;

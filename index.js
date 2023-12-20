@@ -10,7 +10,7 @@ const validateUser = async (email) => {
   }
 };
 
-const OnClickLogin = async () => {
+const onClickLogin = async () => {
   const email = document.getElementById("input-email").value;
   if (email.length < 5 || !email.includes("@")) {
     alert("Email inválido!");
@@ -19,11 +19,11 @@ const OnClickLogin = async () => {
   const result = await validateUser(email);
 
   if (result.error) {
-    alert(`falha ao validar o e-mail`);
+    alert("Falha ao validar e-mail.");
     return;
   }
-  localStorage.setItem("WalletApp:userEmail:", result.email);
-  localStorage.setItem("WalletApp:userName:", result.name);
-  localStorage.setItem("WalletApp:userId", result.id);
+  localStorage.setItem("@WalletApp:userEmail", result.email);
+  localStorage.setItem("@WalletApp:userName", result.name);
+  localStorage.setItem("@WalletApp:userId", result.id);
   window.open("./src/pages/home/index.html", "_self");
 };
