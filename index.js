@@ -12,9 +12,14 @@ const validateUser = async (email) => {
 
 const onClickLogin = async () => {
   const email = document.getElementById("input-email").value;
+  const senha = document.getElementById("input-senha").value;
   if (email.length < 5 || !email.includes("@")) {
     alert("Email inválido!");
     return;
+    if (!email || !senha) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
   }
   const result = await validateUser(email);
 
