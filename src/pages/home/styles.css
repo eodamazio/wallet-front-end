@@ -6,7 +6,7 @@
   width: 100vw;
   height: auto;
   min-height: 100vh;
-  background-color: #f4f4f9;
+  background-color: #000c63;
 }
 
 .navbar {
@@ -58,7 +58,7 @@
   height: 48px;
   width: 48px;
   border-radius: 24px;
-  background-color: #e4fde1;
+  background-color: #ffffff;
 }
 
 .finance-card-container {
@@ -165,7 +165,7 @@ td.center {
 .modal-content {
   height: 100%;
   width: 480px;
-  background-color: #f4f4f9;
+  background-color: #ffffff;
   padding: 24px;
   box-sizing: border-box;
 }

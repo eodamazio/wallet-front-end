@@ -56,23 +56,23 @@ a {
 }
 
 button {
-  background-color: #5936cd;
+  background-color: #d49f00;
   height: 56px;
   width: 432px;
   border-radius: 12px;
   color: #f4f4f9;
   font-weight: bold;
   font-size: 16px;
-  border-color: #5936cd;
+  border-color: hwb(233 0% 84% / 0.898);
   border-style: solid;
   cursor: pointer;
 }
 
 button.small {
   border-width: 2px;
-  border-color: #5936cd;
+  border-color: hwb(233 0% 84% / 0.898);
   border-style: solid;
-  background-color: #ffffff;
+  background-color: #d49f00;
   color: #010400;
   font-weight: bold;
   font-size: 14px;
@@ -84,7 +84,7 @@ button.small {
 input {
   width: 100%;
   height: 48px;
-  border-color: #06bee1;
+  border-color: #d49f00;
   border-width: 2px;
   border-style: solid;
   border-radius: 8px;
@@ -100,7 +100,7 @@ input {
 select {
   width: 100%;
   height: 48px;
-  border-color: #06bee1;
+  border-color: #d49f00;
   border-width: 2px;
   border-style: solid;
   border-radius: 8px;
@@ -155,7 +155,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #5936cd;
+  background-color: hwb(233 0% 84% / 0.898);
 }
 
 .auth-content {

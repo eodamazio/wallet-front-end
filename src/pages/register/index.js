@@ -25,26 +25,6 @@ const onCallRegister = async (email, name) => {
     return { error };
   }
 };
-const onClickRegister = async () => {
-  const nome = document.getElementById("input-nome").value;
-  const sobrenome = document.getElementById("input-sobrenome").value;
-  const email = document.getElementById("input-email").value;
-  const nascimento = document.getElementById("input-nascimento").value;
-  const sexo = document.getElementById("input-sexo").value;
-  const senha = document.getElementById("input-senha").value;
-
-  // Validação básica dos campos
-  if (!nome || !sobrenome || !email || !nascimento || !sexo || !senha) {
-    alert("Por favor, preencha todos os campos.");
-    return;
-  }
-
-  // Restante do código para enviar dados ao servidor ou processar conforme necessário
-  // ...
-
-  // Exemplo de alerta para teste
-  alert("Registro bem-sucedido!");
-};
 
 const onRegister = async () => {
   const email = document.getElementById("input-email").value;

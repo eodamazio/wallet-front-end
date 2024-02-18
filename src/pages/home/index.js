@@ -197,11 +197,9 @@ const renderFinanceElements = (data) => {
 const onLoadFinancesData = async () => {
   try {
     const dateInputValue = document.getElementById("select-date").value;
-    const isoDate = new Date(dateInputValue).toISOString().split("T")[0]; // Convertendo para o formato esperado
-
     const email = localStorage.getItem("@WalletApp:userEmail");
     const result = await fetch(
-      `https://mp-wallet-app-api.herokuapp.com/finances?date=${isoDate}`, // Use a data convertida na URL
+      `https://mp-wallet-app-api.herokuapp.com/finances?date=${dateInputValue}`,
       {
         method: "GET",
         headers: {
